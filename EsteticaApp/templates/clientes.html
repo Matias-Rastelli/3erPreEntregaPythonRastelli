@@ -1,0 +1,24 @@
+{% extends 'padre.html' %}
+
+
+{% block main %}
+
+<main>
+    <section id="services" class="list-section">
+        <div class="container">
+            <h2>Listado de Clientes</h2>
+            <div class="list">
+            {% for cliente in list %}
+                <div class="list-item">
+                    <p>Nombre: {{cliente.nombre}}</p>
+                    <p>Apellido: {{cliente.apellido}}</p>
+                    <p>Telefono: {{cliente.telefono}}</p>
+                </div>
+                
+            {% endfor %}                
+            </div>
+        </div>
+    </section>
+</main>
+    
+{% endblock main %}
