@@ -1,0 +1,20 @@
+{% extends 'padre.html' %}
+
+
+{% block main %}
+
+<main>
+    <section id="services" class="list-section">
+        <div class="container">
+            <form action=" {% url 'MasajesForm' %}" method="post"> {% csrf_token %}
+                {{ miFormulario.as_p }}
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </section>
+</main>
+    
+{% endblock main %}
+
+
+    

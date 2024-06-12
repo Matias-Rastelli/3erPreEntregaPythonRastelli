@@ -23,5 +23,8 @@ urlpatterns = [
     path('', home, name='Home'),
     path('masajes/', masajes, name='Masajes'),
     path('clientes/', clientes, name='Clientes'),
-    path('turnos/', turnos, name='Turnos')
+    path('turnos/', turnos, name='Turnos'),
+    path('clientes-form/', clientes_form, name='ClientesForm'),
+    path('masajes-form/', masajes_form, name='MasajesForm'),
+    path('turnos-form/', turnos_form, name='TurnosForm')
 ]
