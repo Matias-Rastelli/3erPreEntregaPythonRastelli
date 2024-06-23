@@ -1,0 +1,29 @@
+{% extends 'padre.html' %}
+
+
+{% block main %}
+
+<main>
+    <section id="services" class="list-section">
+        <a href="{% url 'MasajesForm' %}" class="cta-button">Crear un nuevo masaje</a>
+        <div class="container">
+            <h2>MASAJE BUSCADO</h2>
+            <div class="list">
+            {% for masaje in list %}
+                <div class="list-item">
+                    <h3>{{masaje.nombre}}</h3>
+                    <p>{{masaje.descripcion}}</p>
+                    <p>Precio: {{masaje.precio}}</p>
+                    <p>Duracion: {{masaje.duracion}}</p>
+                </div>
+                
+            {% endfor %}                
+            </div>
+        </div>
+    </section>
+</main>
+    
+{% endblock main %}
+
+
+    

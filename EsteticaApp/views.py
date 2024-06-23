@@ -80,3 +80,12 @@ def turnos_form(req):
 
     miFormulario = TurnosForm()
     return render(req, "turnos_form.html", {"miFormulario":miFormulario } )
+
+def masajes_busqueda(req):
+
+  return render(req, "masajes_busqueda.html", {})
+
+def masajes_buscado(req):
+
+  masaje_encontrado = req.GET["nombre"]
+  return render(req, "masajes_buscado.html", {})
